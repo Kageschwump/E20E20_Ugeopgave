@@ -3,6 +3,7 @@ package Models;
 public class Customer {
     private String name;
     private String profileId;
+    private int credit;
 
     public String getName() {
         return name;
@@ -20,8 +21,17 @@ public class Customer {
         this.profileId = profileId;
     }
 
-    public Customer(String name, String profileId) {
+    public Customer(String name, String profileId, int credit) {
     this.name = name;
     this.profileId = profileId;
+    this.credit = credit;
+    }
+
+    public int getCredit() {
+        return credit;
+    }
+
+    public void setCredit(int credit) {
+        this.credit = credit;
     }
 }
