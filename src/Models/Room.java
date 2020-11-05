@@ -3,6 +3,7 @@ package Models;
 public class Room {
     private String fireSafety;
     private String address;
+    private int capacity;
 
     public String getFireSafety() {
         return fireSafety;
@@ -20,8 +21,18 @@ public class Room {
         this.address = address;
     }
 
-    public Room(String address, String fireSafety) {
-    this.address = address;
-    this.fireSafety = fireSafety;
+    public int getCapacity() {
+        return capacity;
     }
+
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
+    }
+
+    public Room(String address, String fireSafety, int capacity) {
+        this.address = address;
+        this.fireSafety = fireSafety;
+        this.capacity = capacity;
+    }
+
 }
