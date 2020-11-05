@@ -1,24 +1,17 @@
 package Models;
 
 public class Event {
-    private String artist;
-    private String room;
+    private Artist artist;
+    private Room room;
     private int tickets;
 
-    public String getArtist() {
+    public Artist getArtist() {
         return artist;
     }
 
-    public void setArtist(String artist) {
-        this.artist = artist;
-    }
 
-    public String getRoom() {
+    public Room getRoom() {
         return room;
-    }
-
-    public void setRoom(String room) {
-        this.room = room;
     }
 
     public int getTickets() {
@@ -29,7 +22,7 @@ public class Event {
         this.tickets = tickets;
     }
 
-    public Event(String artist, String room, int tickets) {
+    public Event(Artist artist, Room room, int tickets) {
         this.artist = artist;
         this.room = room;
         this.tickets = tickets;
